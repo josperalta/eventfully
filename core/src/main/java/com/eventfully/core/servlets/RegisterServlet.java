@@ -109,12 +109,12 @@ public class RegisterServlet extends SlingAllMethodsServlet {
 		param.put(ResourceResolverFactory.SUBSERVICE, SYSTEM_USER);
 
     ResourceResolver resourceResolver = null;
-		try {
+    try {
       resourceResolver = resourceResolverFactory.getServiceResourceResolver(param);
       markAttendeeAsConfirmed(resourceResolver, eventPath, email, name);
       resourceResolver.commit();
     } catch (PersistenceException | LoginException e) {
-			log.error("Unable to save user rsvp confirmation", e);
+      log.error("Unable to save user rsvp confirmation", e);
       response.sendRedirect(ERROR_PAGE);
     } finally {
       if (resourceResolver != null) {
