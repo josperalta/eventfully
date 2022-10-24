@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/eventfully/clientlibs"/>
+    <filter root="/apps/eventfully/components"/>
+    <filter root="/apps/eventfully/i18n"/>
+</workspaceFilter>

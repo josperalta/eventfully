@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/eventfully",
+        "create path (nt:unstructured) /content/dam/eventfully/jcr:content",
+        "set properties on /content/dam/eventfully/jcr:content\n  set cq:conf{String} to /conf/eventfully\n  set jcr:title{String} to \"Event Fully\"\nend"
+    ]
+}

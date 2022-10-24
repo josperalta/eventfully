@@ -1,0 +1,8 @@
+<div class="cmp-rsvp" data-sly-use.model="com.eventfully.core.models.Rsvp">
+  <h3 class="cmp-rsvp__title">${model.title}</h3>
+  <div class="cmp-rsvp__confimed-list" data-sly-list.attendee="${model.attendees}">
+    <div class="cmp-rsvp__confimed-attendee" data-sly-test="${attendee.confirmed}">
+      ${attendee.name}
+    </div>
+  </div>
+</div>
